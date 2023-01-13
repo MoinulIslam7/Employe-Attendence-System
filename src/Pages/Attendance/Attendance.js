@@ -66,8 +66,6 @@ const Attendance = () => {
                         <option>Attendance</option>
                         <option>option-1</option>
                         <option>option-2</option>
-                        <option>option-3</option>
-                        <option>option-4</option>
                     </select>
                 </div>
 
@@ -76,8 +74,6 @@ const Attendance = () => {
                         <option>Present</option>
                         <option>option-1</option>
                         <option>option-2</option>
-                        <option>option-3</option>
-                        <option>option-4</option>
                     </select>
                 </div>
             </div>
@@ -91,8 +87,6 @@ const Attendance = () => {
                         <option>Designation</option>
                         <option>option-1</option>
                         <option>option-2</option>
-                        <option>option-3</option>
-                        <option>option-4</option>
                     </select>
                 </div>
 
@@ -101,8 +95,6 @@ const Attendance = () => {
                         <option>Department</option>
                         <option>option-1</option>
                         <option>option-2</option>
-                        <option>option-3</option>
-                        <option>option-4</option>
                     </select>
                 </div>
             </div>
@@ -138,8 +130,8 @@ const Attendance = () => {
                                 </th>
                                 <td> <p className="">{data.name}</p> </td>
                                 <td> <p className="">{data.dept}</p> </td>
-                                <td> <p className="bg-green-800 rounded-2xl px-2 py-1 text-white">{data.checkIn}</p> </td>
-                                <td> <p className="bg-red-600 rounded-2xl px-2 py-1 text-white">{data.checkout}</p> </td>
+                                <td> <p className="bg-green-800 rounded-2xl p-1 text-center text-white">{data.checkIn}</p> </td>
+                                <td> <p className="bg-red-600 rounded-2xl p-1 text-center text-white">{data.checkout}</p> </td>
                                 <td> <p className="">{data.remake}</p> </td>
                                 <td> <p className="">{data.hours}</p> </td>
                                 <td> <p className="">{data.overtime}</p> </td>

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { ArrowRightOnRectangleIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
+import logo from "../../assets/logo.jpg"
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div class="bg-primary sidebar h-full">
-
-            <h3 className='text-white text-2xl'>Place A Logo Here</h3>
-            <div className='mt-20'>
+        <div class="bg-primary sidebar h-screen">
+           
+            <img className='rounded-full h-24 w-24 mx-auto' src={logo} alt="" />
+            <div className='mt-10'>
                 <ul className='text-white'>
-
                     <li className='text-xl font-semibold mb-4'>
                         <NavLink to='/' className={`${({ isActive }) => isActive ? 'active' : undefined} flex`}>
                             <svg className='w-8 h-8 mr-3 ml-16' width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,12 +1,12 @@
 import { UserGroupIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import './CompanyStatus.css';
-import icon1 from '../../../src/asscet/icon1.png';
-import icon2 from '../../../src/asscet/icon2.png';
-import icon3 from '../../../src/asscet/icon3.png';
-import icon4 from '../../../src/asscet/icon4.png';
-import icon5 from '../../../src/asscet/icon5.png';
-import icon6 from '../../../src/asscet/icon6.png';
+import icon1 from '../../../src/assets/icon1.png';
+import icon2 from '../../../src/assets/icon2.png';
+import icon3 from '../../../src/assets/icon3.png';
+import icon4 from '../../../src/assets/icon4.png';
+import icon5 from '../../../src/assets/icon5.png';
+import icon6 from '../../../src/assets/icon6.png';
 
 const CompanyStatus = ({ status }) => {
     const { title, member } = status;

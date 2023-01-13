@@ -8,7 +8,10 @@ const Main = () => {
         <div className=''>
             <div class="grid grid-cols-4">
                 <div className=''><Navbar></Navbar></div>
-                <div class="col-span-3"><Header></Header> <Outlet></Outlet></div>
+                <div class="col-span-3">
+                    <Header></Header>
+                    <Outlet></Outlet>
+                </div>
             </div>
 
         </div>
