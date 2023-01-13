@@ -89,18 +89,6 @@ const Home = () => {
                             </a>
                         </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
                         <li>
                             <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 hover:text-black">
                                 <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">

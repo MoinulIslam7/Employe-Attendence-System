@@ -40,14 +40,15 @@ const Dashboard = () => {
                     ></CompanyStatus>)
                 }
             </div>
-<hr className='mt-5'/>
-
+            <hr className='mt-5' />
             <p className='text-black font-bold mt-16 mb-4'>Expense Report</p>
             <div className='flex'>
                 <div className='w-1/2 bg-white rounded-xl'>
                     <Rechart></Rechart>
                 </div>
             </div>
+          
+            
         </div>
     );
 };
