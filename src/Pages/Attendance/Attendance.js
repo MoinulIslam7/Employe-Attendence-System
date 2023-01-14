@@ -56,9 +56,14 @@ const Attendance = () => {
                 </div>
             </div>
 
-            <div className='flex gap-3'>
-                <input type="date" placeholder='' className='p-3 w-52 rounded-lg border-2' />
-                <input type="text" placeholder='Department' className='p-3 rounded-lg border-2' />
+            <div className='flex justify-center items-center flex-wrap gap-3'>
+
+                <div>
+                    <input type="date" placeholder='' className='p-3 w-52 rounded-lg border-2' />
+                </div>
+                <div>
+                    <input type="text" placeholder='Department' className='p-3 rounded-lg border-2' />
+                </div>
 
                 <div>
                     <select className='w-48 p-3 rounded-lg border-2'>
@@ -77,7 +82,7 @@ const Attendance = () => {
                 </div>
             </div>
 
-            <div className='flex gap-3 mt-5'>
+            <div className='flex justify-center items-center flex-wrap gap-3 mt-5'>
                 <input type="text" placeholder='Check In' className='p-3 rounded-lg border-2' />
                 <input type="text" placeholder='Location' className='p-3 rounded-lg border-2' />
 
@@ -99,7 +104,7 @@ const Attendance = () => {
             </div>
 
 
-            <div className="overflow-x-auto w-full mt-16">
+            <div className=" overflow-x-auto w-full mt-16">
                 <table className="table w-full">
                     <thead>
                         <tr>
@@ -139,18 +144,18 @@ const Attendance = () => {
                         </tbody>)
                     }
 
-                    
+
                 </table>
 
                 <div className="btn-group mt-6 flex items-center float-right">
-                    <ChevronLeftIcon className='w-4 h-4 mr-2 cursor-pointer'/>
+                    <ChevronLeftIcon className='w-4 h-4 mr-2 cursor-pointer' />
                     <button className=" btn-active px-2 bg-slate-200 rounded-lg">1</button>
                     <button className=" px-2 ml-2 bg-slate-200 rounded-lg">2</button>
                     <button className=" px-2 ml-2 bg-slate-200 rounded-lg">3</button>
                     <button className=" px-2 ml-2 bg-slate-200 rounded-lg">4</button>
                     <button className=" px-2 ml-2 bg-slate-200 rounded-lg">5</button>
                     <button className=" px-2 ml-2 bg-slate-200 rounded-lg">6</button>
-                    <ChevronRightIcon className='w-4 h-4 ml-2 cursor-pointer'/>
+                    <ChevronRightIcon className='w-4 h-4 ml-2 cursor-pointer' />
                 </div>
             </div>
 

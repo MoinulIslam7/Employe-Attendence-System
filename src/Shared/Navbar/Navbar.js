@@ -1,55 +1,22 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Bars3Icon, ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/solid';
-import logo from "../../assets/logo.jpg"
-
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
-    const btn = document.querySelector(".mobile-menu-button");
-    const sidebar = document.querySelector(".sidebar");
-    let isSidebarOpen = false;
-
-    // add our event listener for the click
-    window.addEventListener("click", () => {
-        sidebar.classList.toggle("-translate-x-full");
-    });
-
-    // close sidebar if user clicks outside of the sidebar
-    window.addEventListener("click", (event) => {
-        const isButtonClick = btn === event.target && btn.contains(event.target);
-        const isOutsideClick =
-            sidebar !== event.target && !sidebar.contains(event.target);
-
-        // bail out if sidebar isnt open
-        if (sidebar.classList.contains("-translate-x-full")) return;
-
-        // if the user clicks the button, then toggle the class
-        if (isButtonClick) {
-            console.log("does not contain");
-            sidebar.classList.toggle("-translate-x-full");
-            return;
-        }
-
-        // check to see if user clicks outside the sidebar
-        if (!isButtonClick && isOutsideClick) {
-            console.log("outside click");
-            sidebar.classList.add("-translate-x-full");
-            return;
-        }
-    });
+    const [open, setOpen] = useState(false);
     return (
-        <div class="bg-primary h-screen ">
-            <div className='sidebar space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out'>
-                <Link href="#" class="text-white flex justify-center items-center space-x-2 px-4">
-                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="bg-primary h-screen ">
+            <div className='sidebar space-y-6 py-7 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-2 transition duration-200 ease-in-out'>
+                <Link href="#" className="text-white flex justify-center items-center space-x-2 px-4">
+                    <svg className="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
-                    <span class="text-2xl font-extrabold">Employe Management</span>
+                    <span className="text-2xl font-extrabold">Employe Management</span>
                 </Link>
                 <div className='mt-10'>
                     <ul className='text-white'>
                         <li className='text-xl font-semibold mb-4'>
-                            <NavLink to='/' className={`${({ isActive }) => isActive ? 'active' : undefined} flex`}>
+                            <NavLink to='/' className={`flex`}>
                                 <svg className='w-8 h-8 mr-3 ml-16' width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.8893 0.794312H2.79431C2.2857 0.794312 1.79792 0.996357 1.43828 1.356C1.07863 1.71564 0.876587 2.20342 0.876587 2.71204V19.9716C0.876587 20.4802 1.07863 20.9679 1.43828 21.3276C1.79792 21.6872 2.2857 21.8893 2.79431 21.8893H23.8893C24.3979 21.8893 24.8857 21.6872 25.2453 21.3276C25.605 20.9679 25.807 20.4802 25.807 19.9716V2.71204C25.807 2.20342 25.605 1.71564 25.2453 1.356C24.8857 0.996357 24.3979 0.794312 23.8893 0.794312ZM2.79431 2.71204H23.8893V7.50635H2.79431V2.71204ZM23.8893 19.9716H11.4241V9.42407H23.8893V19.9716Z" fill="white" />
                                 </svg>

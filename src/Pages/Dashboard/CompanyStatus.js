@@ -11,7 +11,7 @@ import icon6 from '../../../src/assets/icon6.png';
 const CompanyStatus = ({ status }) => {
     const { title, member } = status;
     return (
-        <div className="bg-white rounded-lg grid grid-rows-2 md:grid-rows-1 mt-3">
+        <div className="bg-white rounded-lg shadow-lg  mt-3">
             <div className="card-body">
                 <div className='flex items-center gap-1'>
                     <UserGroupIcon className='w-4 h-4' />
@@ -20,7 +20,7 @@ const CompanyStatus = ({ status }) => {
 
                 <div className='flex items-center justify-between mt-3'>
                     <h1 className='text-4xl font-bold'>{member}</h1>
-                    <button className="btn">View All</button>
+                    <button className="btn mx-5">View All</button>
                 </div>
                 <hr className='mt-8 mb-3' />
                 <div className="card-actions">

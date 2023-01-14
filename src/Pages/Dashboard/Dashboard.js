@@ -32,7 +32,7 @@ const Dashboard = () => {
             <h1 className='text-4xl text-primary font-bold py-8'>Dashboard</h1>
             <p className='text-black font-bold'>Company Status</p>
 
-            <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-6 rounded-lg'>
+            <div className='flex items-center  flex-wrap gap-10 rounded-lg'>
                 {
                     status.map(status => <CompanyStatus
                         key={status.id}
