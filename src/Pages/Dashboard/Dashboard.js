@@ -32,7 +32,7 @@ const Dashboard = () => {
             <h1 className='text-4xl text-primary font-bold py-8'>Dashboard</h1>
             <p className='text-black font-bold'>Company Status</p>
 
-            <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 rounded-lg'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-6 rounded-lg'>
                 {
                     status.map(status => <CompanyStatus
                         key={status.id}
@@ -42,8 +42,8 @@ const Dashboard = () => {
             </div>
             <hr className='mt-5' />
             <p className='text-black font-bold mt-16 mb-4'>Expense Report</p>
-            <div className='flex'>
-                <div className='w-1/2 bg-white rounded-xl'>
+            <div className='flex flex-wrap'>
+                <div className='md:w-1/2 bg-white rounded-xl'>
                     <Rechart></Rechart>
                 </div>
             </div>

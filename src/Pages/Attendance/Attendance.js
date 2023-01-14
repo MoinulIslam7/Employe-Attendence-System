@@ -2,7 +2,6 @@ import React from 'react';
 import { Cog6ToothIcon } from '@heroicons/react/24/solid';
 import { EyeIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 
-
 const tableData = [
     {
         "name": "Jahid Hasan",
@@ -48,7 +47,7 @@ const tableData = [
 
 const Attendance = () => {
     return (
-        <div className='ml-16 mr-16'>
+        <div className='ml-16 mr-16 '>
             <div className='flex items-center justify-between py-8'>
                 <h1 className='text-4xl text-primary font-bold'>Attendance</h1>
                 <div className='flex gap-8'>
@@ -132,9 +131,9 @@ const Attendance = () => {
                                 <td> <p className="">{data.dept}</p> </td>
                                 <td> <p className="bg-green-800 rounded-2xl p-1 text-center text-white">{data.checkIn}</p> </td>
                                 <td> <p className="bg-red-600 rounded-2xl p-1 text-center text-white">{data.checkout}</p> </td>
-                                <td> <p className="">{data.remake}</p> </td>
-                                <td> <p className="">{data.hours}</p> </td>
-                                <td> <p className="">{data.overtime}</p> </td>
+                                <td> <p></p> </td>
+                                <td> <p></p> </td>
+                                <td> <p></p> </td>
                                 <td> <p className="text-primary w-6 h-6"><EyeIcon /></p> </td>
                             </tr>
                         </tbody>)
